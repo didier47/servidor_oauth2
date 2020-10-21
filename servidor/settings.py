@@ -102,17 +102,12 @@ WSGI_APPLICATION = 'servidor.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'oauth',
-        'USER': 'wposs',
+        'NAME': 'polaris_security',
+        'USER': 'polaris',
         'PASSWORD': 'Wposs.2020',
-        'HOST': 'localhost',
+        'HOST': 'polarisaurora.cluster-c6vimscorsec.us-east-2.rds.amazonaws.com',
         'PORT': '3306',
     },
-    'cassandra': {
-        'ENGINE': 'django_cassandra_engine',
-        'NAME': 'oauth',
-        'HOST': 'localhost',
-    }
 }
 
 # Password validation
